@@ -1,0 +1,1254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0404A47A2297D0750051067C /* NBDist in Resources */ = {isa = PBXBuildFile; fileRef = 0404A4792297D0750051067C /* NBDist */; };
+		041D3D3421F9636D0028EF0C /* MallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041D3D3321F9636D0028EF0C /* MallViewController.m */; };
+		0427B8BA20F87F6300832693 /* ESP_ByteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B89B20F87F6300832693 /* ESP_ByteUtil.m */; };
+		0427B8BB20F87F6300832693 /* ESP_CRC8.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B89D20F87F6300832693 /* ESP_CRC8.m */; };
+		0427B8BC20F87F6300832693 /* ESP_NetUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B89F20F87F6300832693 /* ESP_NetUtil.m */; };
+		0427B8BD20F87F6300832693 /* ESP_WifiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8A120F87F6300832693 /* ESP_WifiUtil.m */; };
+		0427B8BE20F87F6300832693 /* ESPAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8A320F87F6300832693 /* ESPAES.m */; };
+		0427B8BF20F87F6300832693 /* ESPDataCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8A520F87F6300832693 /* ESPDataCode.m */; };
+		0427B8C020F87F6300832693 /* ESPDatumCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8A720F87F6300832693 /* ESPDatumCode.m */; };
+		0427B8C120F87F6300832693 /* ESPGuideCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8A920F87F6300832693 /* ESPGuideCode.m */; };
+		0427B8C220F87F6300832693 /* EspTouchDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0427B8AB20F87F6300832693 /* EspTouchDemo-Info.plist */; };
+		0427B8C320F87F6300832693 /* ESPTouchGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8AE20F87F6300832693 /* ESPTouchGenerator.m */; };
+		0427B8C420F87F6300832693 /* ESPTouchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8B020F87F6300832693 /* ESPTouchResult.m */; };
+		0427B8C520F87F6300832693 /* ESPTouchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8B220F87F6300832693 /* ESPTouchTask.m */; };
+		0427B8C620F87F6300832693 /* ESPTouchTaskParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8B420F87F6300832693 /* ESPTouchTaskParameter.m */; };
+		0427B8C720F87F6300832693 /* ESPUDPSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8B620F87F6300832693 /* ESPUDPSocketClient.m */; };
+		0427B8C820F87F6300832693 /* ESPUDPSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8B820F87F6300832693 /* ESPUDPSocketServer.m */; };
+		0427B8CB20F87FA500832693 /* SmartConfigWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8CA20F87FA500832693 /* SmartConfigWifi.m */; };
+		0427B8CC20F8807E00832693 /* SmartConfigWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427B8CA20F87FA500832693 /* SmartConfigWifi.m */; };
+		0429B9EE207C5F3B00E75ADE /* WiFiSocketAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429B9ED207C5F3B00E75ADE /* WiFiSocketAppDelegate.m */; };
+		0429B9F1207C5F3B00E75ADE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429B9F0207C5F3B00E75ADE /* MainViewController.m */; };
+		0429B9F4207C5F3B00E75ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429B9F2207C5F3B00E75ADE /* Main.storyboard */; };
+		0429B9F6207C5F3B00E75ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0429B9F5207C5F3B00E75ADE /* Assets.xcassets */; };
+		0429B9F9207C5F3B00E75ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429B9F7207C5F3B00E75ADE /* LaunchScreen.storyboard */; };
+		0429B9FC207C5F3B00E75ADE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429B9FB207C5F3B00E75ADE /* main.m */; };
+		0429BA06207C5F3B00E75ADE /* WiFiSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429BA05207C5F3B00E75ADE /* WiFiSocketTests.m */; };
+		0429BA11207C5F3B00E75ADE /* WiFiSocketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429BA10207C5F3B00E75ADE /* WiFiSocketUITests.m */; };
+		0429BA20207C5F6400E75ADE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0429BA1F207C5F6400E75ADE /* WebKit.framework */; };
+		042D46BD20C7B4E2005056AE /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46BA20C7B4E2005056AE /* GCDAsyncSocket.m */; };
+		042D46C220C7B891005056AE /* BasicInfoCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46C020C7B891005056AE /* BasicInfoCollection.m */; };
+		042D46C620C7D76F005056AE /* MqttClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46C520C7D76F005056AE /* MqttClientManager.m */; };
+		042D46C920C8DA18005056AE /* MQTTMessageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46C820C8DA18005056AE /* MQTTMessageEntity.m */; };
+		042D46CC20C905AB005056AE /* LANConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46CB20C905AB005056AE /* LANConversation.m */; };
+		042D46E020CA6E08005056AE /* UDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46DF20CA6E08005056AE /* UDPSocket.m */; };
+		042D46EC20CA7CFB005056AE /* JMAirKissEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46E820CA7CFB005056AE /* JMAirKissEncoder.m */; };
+		042D46ED20CA7CFB005056AE /* JMAirKissConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46E920CA7CFB005056AE /* JMAirKissConnection.m */; };
+		042D46EE20CA7CFB005056AE /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46EA20CA7CFB005056AE /* GCDAsyncUdpSocket.m */; };
+		042DBCBB20FDFAE90053C3CF /* BaseControlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DBCB220FDFAE80053C3CF /* BaseControlModel.m */; };
+		042DBCBC20FDFAE90053C3CF /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DBCB420FDFAE80053C3CF /* BaseModel.m */; };
+		042DBCBD20FDFAE90053C3CF /* HandlingDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DBCB620FDFAE80053C3CF /* HandlingDataModel.m */; };
+		042DBCBE20FDFAE90053C3CF /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DBCB820FDFAE80053C3CF /* SettingModel.m */; };
+		042DBCBF20FDFAE90053C3CF /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DBCBA20FDFAE80053C3CF /* HomeModel.m */; };
+		042E706A211D4181008B6F04 /* UDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D46DF20CA6E08005056AE /* UDPSocket.m */; };
+		042EB0622135352300BEB67C /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042EB0612135352300BEB67C /* UserInfoModel.m */; };
+		042F82F9213E8F9F00EFE233 /* ScanCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F82F5213E8F9E00EFE233 /* ScanCodeView.m */; };
+		042F82FA213E8F9F00EFE233 /* ScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F82F8213E8F9E00EFE233 /* ScanCodeViewController.m */; };
+		042F8308213E906000EFE233 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F82FD213E906000EFE233 /* UIColor+HexColor.m */; };
+		042F8309213E906000EFE233 /* UIFont+Adjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F82FF213E906000EFE233 /* UIFont+Adjust.m */; };
+		042F830A213E906000EFE233 /* UIImage+ColorSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F8302213E906000EFE233 /* UIImage+ColorSelect.m */; };
+		042F830B213E906000EFE233 /* UIView+ColorSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F8305213E906000EFE233 /* UIView+ColorSelect.m */; };
+		042F830C213E906000EFE233 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F8307213E906000EFE233 /* UIView+frame.m */; };
+		043A622C21758D1B00B9E373 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A622B21758D1B00B9E373 /* LoginModel.m */; };
+		04412F1B2180859000EBF497 /* FirmwareUpdateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04412F1A2180859000EBF497 /* FirmwareUpdateModel.m */; };
+		0442E70F20F2FD4E00DC373F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0442E70E20F2FD4D00DC373F /* AudioToolbox.framework */; };
+		0442E71120F2FE9900DC373F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0442E71020F2FE9900DC373F /* CoreMotion.framework */; };
+		044DB2B2224B6BEA00233634 /* StoreLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DB2B1224B6BEA00233634 /* StoreLocal.m */; };
+		044DDF0920CE1A7F004B79C0 /* service.crt in Resources */ = {isa = PBXBuildFile; fileRef = 044DDF0820CE1A7F004B79C0 /* service.crt */; };
+		044DDF0C20CE1E82004B79C0 /* ToolHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 044DDF0B20CE1E82004B79C0 /* ToolHandle.m */; };
+		044EE73F2318ACB4006D92AD /* MiNiWif_H5 in Resources */ = {isa = PBXBuildFile; fileRef = 044EE73E2318ACB4006D92AD /* MiNiWif_H5 */; };
+		0462A07F21AFE3A5001548FB /* SpecialConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462A07E21AFE3A5001548FB /* SpecialConstant.m */; };
+		0468535720FEEFAE00816BD7 /* ConfigWiFiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0468535620FEEFAE00816BD7 /* ConfigWiFiModel.m */; };
+		0480C774214F5B510071D9CE /* MqMessageResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480C773214F5B510071D9CE /* MqMessageResponseModel.m */; };
+		048BB0852126B68400AD5C21 /* startai_mq_ios_3_0_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437CBF22126B5CA001DF934 /* startai_mq_ios_3_0_1.framework */; };
+		048BB0862126B68400AD5C21 /* startai_mq_ios_3_0_1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0437CBF22126B5CA001DF934 /* startai_mq_ios_3_0_1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04BD491721884A3B00C4E526 /* LightControlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD491621884A3B00C4E526 /* LightControlModel.m */; };
+		04C72927221E953400044F82 /* MusikDist in Resources */ = {isa = PBXBuildFile; fileRef = 04C72926221E953400044F82 /* MusikDist */; };
+		04D1F4FB21A269B600E4A080 /* MallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1F4FA21A269B600E4A080 /* MallModel.m */; };
+		04E2B793219536820064E0B9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E2B792219536820064E0B9 /* CoreTelephony.framework */; };
+		04E4522C21B6694E002DDE32 /* QueryHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E4522B21B6694E002DDE32 /* QueryHistoryModel.m */; };
+		04E7BE1D20EB6D3300C988E8 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E7BE1B20EB6D3300C988E8 /* TestViewController.m */; };
+		04E7BE1E20EB6D3300C988E8 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E7BE1C20EB6D3300C988E8 /* TestViewController.xib */; };
+		04FCF6DE21EC25BE00074BDE /* LocationInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCF6DC21EC25BD00074BDE /* LocationInformation.m */; };
+		04FCF6E121EC27E400074BDE /* WeatherRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCF6E021EC27E400074BDE /* WeatherRequestModel.m */; };
+		04FF9EAD22A6240D002A6767 /* BaseControlModel+ConstantTemperature.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FF9EAC22A6240D002A6767 /* BaseControlModel+ConstantTemperature.m */; };
+		91B1076DD584A5342134F36F /* libPods-WiFiSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 294E45D06492FC7EEFF2AD77 /* libPods-WiFiSocket.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0429BA02207C5F3B00E75ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0429B9E1207C5F3B00E75ADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0429B9E8207C5F3B00E75ADE;
+			remoteInfo = WiFiSocket;
+		};
+		0429BA0D207C5F3B00E75ADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0429B9E1207C5F3B00E75ADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0429B9E8207C5F3B00E75ADE;
+			remoteInfo = WiFiSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		042E0C9D20EF012A000DBE59 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				048BB0862126B68400AD5C21 /* startai_mq_ios_3_0_1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0404A4792297D0750051067C /* NBDist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NBDist; sourceTree = SOURCE_ROOT; };
+		041D3D3221F9636D0028EF0C /* MallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallViewController.h; sourceTree = "<group>"; };
+		041D3D3321F9636D0028EF0C /* MallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallViewController.m; sourceTree = "<group>"; };
+		0427B89A20F87F6300832693 /* ESP_ByteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_ByteUtil.h; sourceTree = "<group>"; };
+		0427B89B20F87F6300832693 /* ESP_ByteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_ByteUtil.m; sourceTree = "<group>"; };
+		0427B89C20F87F6300832693 /* ESP_CRC8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_CRC8.h; sourceTree = "<group>"; };
+		0427B89D20F87F6300832693 /* ESP_CRC8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_CRC8.m; sourceTree = "<group>"; };
+		0427B89E20F87F6300832693 /* ESP_NetUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_NetUtil.h; sourceTree = "<group>"; };
+		0427B89F20F87F6300832693 /* ESP_NetUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_NetUtil.m; sourceTree = "<group>"; };
+		0427B8A020F87F6300832693 /* ESP_WifiUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP_WifiUtil.h; sourceTree = "<group>"; };
+		0427B8A120F87F6300832693 /* ESP_WifiUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP_WifiUtil.m; sourceTree = "<group>"; };
+		0427B8A220F87F6300832693 /* ESPAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPAES.h; sourceTree = "<group>"; };
+		0427B8A320F87F6300832693 /* ESPAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPAES.m; sourceTree = "<group>"; };
+		0427B8A420F87F6300832693 /* ESPDataCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDataCode.h; sourceTree = "<group>"; };
+		0427B8A520F87F6300832693 /* ESPDataCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDataCode.m; sourceTree = "<group>"; };
+		0427B8A620F87F6300832693 /* ESPDatumCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPDatumCode.h; sourceTree = "<group>"; };
+		0427B8A720F87F6300832693 /* ESPDatumCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPDatumCode.m; sourceTree = "<group>"; };
+		0427B8A820F87F6300832693 /* ESPGuideCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPGuideCode.h; sourceTree = "<group>"; };
+		0427B8A920F87F6300832693 /* ESPGuideCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPGuideCode.m; sourceTree = "<group>"; };
+		0427B8AA20F87F6300832693 /* ESPTouchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchDelegate.h; sourceTree = "<group>"; };
+		0427B8AB20F87F6300832693 /* EspTouchDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EspTouchDemo-Info.plist"; sourceTree = "<group>"; };
+		0427B8AC20F87F6300832693 /* EspTouchDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EspTouchDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0427B8AD20F87F6300832693 /* ESPTouchGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchGenerator.h; sourceTree = "<group>"; };
+		0427B8AE20F87F6300832693 /* ESPTouchGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchGenerator.m; sourceTree = "<group>"; };
+		0427B8AF20F87F6300832693 /* ESPTouchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchResult.h; sourceTree = "<group>"; };
+		0427B8B020F87F6300832693 /* ESPTouchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchResult.m; sourceTree = "<group>"; };
+		0427B8B120F87F6300832693 /* ESPTouchTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTask.h; sourceTree = "<group>"; };
+		0427B8B220F87F6300832693 /* ESPTouchTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchTask.m; sourceTree = "<group>"; };
+		0427B8B320F87F6300832693 /* ESPTouchTaskParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPTouchTaskParameter.h; sourceTree = "<group>"; };
+		0427B8B420F87F6300832693 /* ESPTouchTaskParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPTouchTaskParameter.m; sourceTree = "<group>"; };
+		0427B8B520F87F6300832693 /* ESPUDPSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUDPSocketClient.h; sourceTree = "<group>"; };
+		0427B8B620F87F6300832693 /* ESPUDPSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUDPSocketClient.m; sourceTree = "<group>"; };
+		0427B8B720F87F6300832693 /* ESPUDPSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPUDPSocketServer.h; sourceTree = "<group>"; };
+		0427B8B820F87F6300832693 /* ESPUDPSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPUDPSocketServer.m; sourceTree = "<group>"; };
+		0427B8B920F87F6300832693 /* ESPVersionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPVersionMacro.h; sourceTree = "<group>"; };
+		0427B8C920F87FA500832693 /* SmartConfigWifi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartConfigWifi.h; sourceTree = "<group>"; };
+		0427B8CA20F87FA500832693 /* SmartConfigWifi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartConfigWifi.m; sourceTree = "<group>"; };
+		0429B9E9207C5F3B00E75ADE /* WiFiSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0429B9EC207C5F3B00E75ADE /* WiFiSocketAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiFiSocketAppDelegate.h; sourceTree = "<group>"; };
+		0429B9ED207C5F3B00E75ADE /* WiFiSocketAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiFiSocketAppDelegate.m; sourceTree = "<group>"; };
+		0429B9EF207C5F3B00E75ADE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0429B9F0207C5F3B00E75ADE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0429B9F3207C5F3B00E75ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0429B9F5207C5F3B00E75ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0429B9F8207C5F3B00E75ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0429B9FA207C5F3B00E75ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0429B9FB207C5F3B00E75ADE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0429BA01207C5F3B00E75ADE /* WiFiSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0429BA05207C5F3B00E75ADE /* WiFiSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiFiSocketTests.m; sourceTree = "<group>"; };
+		0429BA07207C5F3B00E75ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0429BA0C207C5F3B00E75ADE /* WiFiSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0429BA10207C5F3B00E75ADE /* WiFiSocketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiFiSocketUITests.m; sourceTree = "<group>"; };
+		0429BA12207C5F3B00E75ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0429BA1F207C5F6400E75ADE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		042D46B920C7B4E2005056AE /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		042D46BA20C7B4E2005056AE /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		042D46C020C7B891005056AE /* BasicInfoCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicInfoCollection.m; sourceTree = "<group>"; };
+		042D46C120C7B891005056AE /* BasicInfoCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicInfoCollection.h; sourceTree = "<group>"; };
+		042D46C420C7D76E005056AE /* MqttClientManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MqttClientManager.h; sourceTree = "<group>"; };
+		042D46C520C7D76F005056AE /* MqttClientManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MqttClientManager.m; sourceTree = "<group>"; };
+		042D46C720C8DA18005056AE /* MQTTMessageEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQTTMessageEntity.h; sourceTree = "<group>"; };
+		042D46C820C8DA18005056AE /* MQTTMessageEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQTTMessageEntity.m; sourceTree = "<group>"; };
+		042D46CA20C905AB005056AE /* LANConversation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LANConversation.h; sourceTree = "<group>"; };
+		042D46CB20C905AB005056AE /* LANConversation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LANConversation.m; sourceTree = "<group>"; };
+		042D46DE20CA6E08005056AE /* UDPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPSocket.h; sourceTree = "<group>"; };
+		042D46DF20CA6E08005056AE /* UDPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPSocket.m; sourceTree = "<group>"; };
+		042D46E420CA7CFB005056AE /* JMAirKissEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAirKissEncoder.h; sourceTree = "<group>"; };
+		042D46E520CA7CFB005056AE /* JMAirKiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAirKiss.h; sourceTree = "<group>"; };
+		042D46E620CA7CFB005056AE /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		042D46E720CA7CFB005056AE /* JMAirKissConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAirKissConnection.h; sourceTree = "<group>"; };
+		042D46E820CA7CFB005056AE /* JMAirKissEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMAirKissEncoder.m; sourceTree = "<group>"; };
+		042D46E920CA7CFB005056AE /* JMAirKissConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMAirKissConnection.m; sourceTree = "<group>"; };
+		042D46EA20CA7CFB005056AE /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		042D46EB20CA7CFB005056AE /* JMAirKiss_Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAirKiss_Defines.h; sourceTree = "<group>"; };
+		042DBCB120FDFAE80053C3CF /* BaseControlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseControlModel.h; sourceTree = "<group>"; };
+		042DBCB220FDFAE80053C3CF /* BaseControlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseControlModel.m; sourceTree = "<group>"; };
+		042DBCB320FDFAE80053C3CF /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		042DBCB420FDFAE80053C3CF /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		042DBCB520FDFAE80053C3CF /* HandlingDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlingDataModel.h; sourceTree = "<group>"; };
+		042DBCB620FDFAE80053C3CF /* HandlingDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandlingDataModel.m; sourceTree = "<group>"; wrapsLines = 0; };
+		042DBCB720FDFAE80053C3CF /* SettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingModel.h; sourceTree = "<group>"; };
+		042DBCB820FDFAE80053C3CF /* SettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
+		042DBCB920FDFAE80053C3CF /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		042DBCBA20FDFAE80053C3CF /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		042EB0602135352300BEB67C /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		042EB0612135352300BEB67C /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
+		042F82F5213E8F9E00EFE233 /* ScanCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanCodeView.m; sourceTree = "<group>"; };
+		042F82F6213E8F9E00EFE233 /* ScanCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanCodeViewController.h; sourceTree = "<group>"; };
+		042F82F7213E8F9E00EFE233 /* ScanCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanCodeView.h; sourceTree = "<group>"; };
+		042F82F8213E8F9E00EFE233 /* ScanCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanCodeViewController.m; sourceTree = "<group>"; };
+		042F82FC213E906000EFE233 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		042F82FD213E906000EFE233 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
+		042F82FE213E906000EFE233 /* UIFont+Adjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Adjust.h"; sourceTree = "<group>"; };
+		042F82FF213E906000EFE233 /* UIFont+Adjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Adjust.m"; sourceTree = "<group>"; };
+		042F8301213E906000EFE233 /* UIImage+ColorSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorSelect.h"; sourceTree = "<group>"; };
+		042F8302213E906000EFE233 /* UIImage+ColorSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorSelect.m"; sourceTree = "<group>"; };
+		042F8304213E906000EFE233 /* UIView+ColorSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorSelect.h"; sourceTree = "<group>"; };
+		042F8305213E906000EFE233 /* UIView+ColorSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorSelect.m"; sourceTree = "<group>"; };
+		042F8306213E906000EFE233 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		042F8307213E906000EFE233 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		0431F94D2191A6A500893571 /* WiFiSocket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WiFiSocket.entitlements; sourceTree = "<group>"; };
+		0437CBF22126B5CA001DF934 /* startai_mq_ios_3_0_1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = startai_mq_ios_3_0_1.framework; sourceTree = "<group>"; };
+		043A622A21758D1B00B9E373 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		043A622B21758D1B00B9E373 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		04412F192180859000EBF497 /* FirmwareUpdateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirmwareUpdateModel.h; sourceTree = "<group>"; };
+		04412F1A2180859000EBF497 /* FirmwareUpdateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirmwareUpdateModel.m; sourceTree = "<group>"; };
+		0442E70E20F2FD4D00DC373F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0442E71020F2FE9900DC373F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		044DB2AE224B62F200233634 /* UserDefault.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefault.h; sourceTree = "<group>"; };
+		044DB2B0224B6BEA00233634 /* StoreLocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreLocal.h; sourceTree = "<group>"; };
+		044DB2B1224B6BEA00233634 /* StoreLocal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreLocal.m; sourceTree = "<group>"; };
+		044DDF0820CE1A7F004B79C0 /* service.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = service.crt; sourceTree = "<group>"; };
+		044DDF0A20CE1E82004B79C0 /* ToolHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolHandle.h; sourceTree = "<group>"; };
+		044DDF0B20CE1E82004B79C0 /* ToolHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolHandle.m; sourceTree = "<group>"; };
+		044EE73E2318ACB4006D92AD /* MiNiWif_H5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MiNiWif_H5; sourceTree = SOURCE_ROOT; };
+		0462A07D21AFE3A5001548FB /* SpecialConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecialConstant.h; path = WiFiSocket/SpecialConstant.h; sourceTree = SOURCE_ROOT; };
+		0462A07E21AFE3A5001548FB /* SpecialConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecialConstant.m; path = WiFiSocket/SpecialConstant.m; sourceTree = SOURCE_ROOT; };
+		0468535520FEEFAE00816BD7 /* ConfigWiFiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigWiFiModel.h; sourceTree = "<group>"; };
+		0468535620FEEFAE00816BD7 /* ConfigWiFiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigWiFiModel.m; sourceTree = "<group>"; };
+		0480C772214F5B510071D9CE /* MqMessageResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MqMessageResponseModel.h; sourceTree = "<group>"; };
+		0480C773214F5B510071D9CE /* MqMessageResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MqMessageResponseModel.m; sourceTree = "<group>"; };
+		04BD491521884A3B00C4E526 /* LightControlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightControlModel.h; sourceTree = "<group>"; };
+		04BD491621884A3B00C4E526 /* LightControlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightControlModel.m; sourceTree = "<group>"; };
+		04C72926221E953400044F82 /* MusikDist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MusikDist; sourceTree = SOURCE_ROOT; };
+		04CE57EF20D2797D005A3417 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04D1F4F921A269B600E4A080 /* MallModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallModel.h; sourceTree = "<group>"; };
+		04D1F4FA21A269B600E4A080 /* MallModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallModel.m; sourceTree = "<group>"; };
+		04E2B792219536820064E0B9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		04E4522A21B6694E002DDE32 /* QueryHistoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryHistoryModel.h; sourceTree = "<group>"; };
+		04E4522B21B6694E002DDE32 /* QueryHistoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryHistoryModel.m; sourceTree = "<group>"; };
+		04E7BE1A20EB6D3300C988E8 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		04E7BE1B20EB6D3300C988E8 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		04E7BE1C20EB6D3300C988E8 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		04FCF6DC21EC25BD00074BDE /* LocationInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationInformation.m; sourceTree = "<group>"; };
+		04FCF6DD21EC25BE00074BDE /* LocationInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationInformation.h; sourceTree = "<group>"; };
+		04FCF6DF21EC27E400074BDE /* WeatherRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherRequestModel.h; sourceTree = "<group>"; };
+		04FCF6E021EC27E400074BDE /* WeatherRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherRequestModel.m; sourceTree = "<group>"; };
+		04FF9EAB22A6240D002A6767 /* BaseControlModel+ConstantTemperature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseControlModel+ConstantTemperature.h"; sourceTree = "<group>"; };
+		04FF9EAC22A6240D002A6767 /* BaseControlModel+ConstantTemperature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseControlModel+ConstantTemperature.m"; sourceTree = "<group>"; };
+		08041DB73838947CC77D9816 /* Pods-WiFiSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiFiSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WiFiSocket/Pods-WiFiSocket.debug.xcconfig"; sourceTree = "<group>"; };
+		294E45D06492FC7EEFF2AD77 /* libPods-WiFiSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WiFiSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBF4B6C91A8D40D7290401B /* Pods-WiFiSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiFiSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiFiSocket/Pods-WiFiSocket.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0429B9E6207C5F3B00E75ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0442E71120F2FE9900DC373F /* CoreMotion.framework in Frameworks */,
+				0442E70F20F2FD4E00DC373F /* AudioToolbox.framework in Frameworks */,
+				04E2B793219536820064E0B9 /* CoreTelephony.framework in Frameworks */,
+				0429BA20207C5F6400E75ADE /* WebKit.framework in Frameworks */,
+				91B1076DD584A5342134F36F /* libPods-WiFiSocket.a in Frameworks */,
+				048BB0852126B68400AD5C21 /* startai_mq_ios_3_0_1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0429B9FE207C5F3B00E75ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0429BA09207C5F3B00E75ADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0427B89920F87F6300832693 /* SmartConfig */ = {
+			isa = PBXGroup;
+			children = (
+				0427B89A20F87F6300832693 /* ESP_ByteUtil.h */,
+				0427B89B20F87F6300832693 /* ESP_ByteUtil.m */,
+				0427B89C20F87F6300832693 /* ESP_CRC8.h */,
+				0427B89D20F87F6300832693 /* ESP_CRC8.m */,
+				0427B89E20F87F6300832693 /* ESP_NetUtil.h */,
+				0427B89F20F87F6300832693 /* ESP_NetUtil.m */,
+				0427B8A020F87F6300832693 /* ESP_WifiUtil.h */,
+				0427B8A120F87F6300832693 /* ESP_WifiUtil.m */,
+				0427B8A220F87F6300832693 /* ESPAES.h */,
+				0427B8A320F87F6300832693 /* ESPAES.m */,
+				0427B8A420F87F6300832693 /* ESPDataCode.h */,
+				0427B8A520F87F6300832693 /* ESPDataCode.m */,
+				0427B8A620F87F6300832693 /* ESPDatumCode.h */,
+				0427B8A720F87F6300832693 /* ESPDatumCode.m */,
+				0427B8A820F87F6300832693 /* ESPGuideCode.h */,
+				0427B8A920F87F6300832693 /* ESPGuideCode.m */,
+				0427B8AA20F87F6300832693 /* ESPTouchDelegate.h */,
+				0427B8AB20F87F6300832693 /* EspTouchDemo-Info.plist */,
+				0427B8AC20F87F6300832693 /* EspTouchDemo-Prefix.pch */,
+				0427B8AD20F87F6300832693 /* ESPTouchGenerator.h */,
+				0427B8AE20F87F6300832693 /* ESPTouchGenerator.m */,
+				0427B8AF20F87F6300832693 /* ESPTouchResult.h */,
+				0427B8B020F87F6300832693 /* ESPTouchResult.m */,
+				0427B8B120F87F6300832693 /* ESPTouchTask.h */,
+				0427B8B220F87F6300832693 /* ESPTouchTask.m */,
+				0427B8B320F87F6300832693 /* ESPTouchTaskParameter.h */,
+				0427B8B420F87F6300832693 /* ESPTouchTaskParameter.m */,
+				0427B8B520F87F6300832693 /* ESPUDPSocketClient.h */,
+				0427B8B620F87F6300832693 /* ESPUDPSocketClient.m */,
+				0427B8B720F87F6300832693 /* ESPUDPSocketServer.h */,
+				0427B8B820F87F6300832693 /* ESPUDPSocketServer.m */,
+				0427B8B920F87F6300832693 /* ESPVersionMacro.h */,
+				0427B8C920F87FA500832693 /* SmartConfigWifi.h */,
+				0427B8CA20F87FA500832693 /* SmartConfigWifi.m */,
+			);
+			path = SmartConfig;
+			sourceTree = "<group>";
+		};
+		0429B9E0207C5F3B00E75ADE = {
+			isa = PBXGroup;
+			children = (
+				0429B9EB207C5F3B00E75ADE /* WiFiSocket */,
+				0429BA04207C5F3B00E75ADE /* WiFiSocketTests */,
+				0429BA0F207C5F3B00E75ADE /* WiFiSocketUITests */,
+				0429B9EA207C5F3B00E75ADE /* Products */,
+				0429BA1E207C5F6400E75ADE /* Frameworks */,
+				C60D187706C6019C4B17F4F4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0429B9EA207C5F3B00E75ADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0429B9E9207C5F3B00E75ADE /* WiFiSocket.app */,
+				0429BA01207C5F3B00E75ADE /* WiFiSocketTests.xctest */,
+				0429BA0C207C5F3B00E75ADE /* WiFiSocketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0429B9EB207C5F3B00E75ADE /* WiFiSocket */ = {
+			isa = PBXGroup;
+			children = (
+				044EE73E2318ACB4006D92AD /* MiNiWif_H5 */,
+				044DB2AF224B6BA900233634 /* Public */,
+				044DB2AB224B624500233634 /* Const */,
+				0404A4792297D0750051067C /* NBDist */,
+				04C72926221E953400044F82 /* MusikDist */,
+				0431F94D2191A6A500893571 /* WiFiSocket.entitlements */,
+				042DBCB020FDFAE80053C3CF /* Model */,
+				042D46B720C7B4E2005056AE /* SDK */,
+				0429B9EC207C5F3B00E75ADE /* WiFiSocketAppDelegate.h */,
+				0429B9ED207C5F3B00E75ADE /* WiFiSocketAppDelegate.m */,
+				0429B9EF207C5F3B00E75ADE /* MainViewController.h */,
+				0429B9F0207C5F3B00E75ADE /* MainViewController.m */,
+				041D3D3221F9636D0028EF0C /* MallViewController.h */,
+				041D3D3321F9636D0028EF0C /* MallViewController.m */,
+				04E7BE1A20EB6D3300C988E8 /* TestViewController.h */,
+				04E7BE1B20EB6D3300C988E8 /* TestViewController.m */,
+				04E7BE1C20EB6D3300C988E8 /* TestViewController.xib */,
+				042D46C420C7D76E005056AE /* MqttClientManager.h */,
+				042D46C520C7D76F005056AE /* MqttClientManager.m */,
+				042D46C720C8DA18005056AE /* MQTTMessageEntity.h */,
+				042D46C820C8DA18005056AE /* MQTTMessageEntity.m */,
+				042D46CA20C905AB005056AE /* LANConversation.h */,
+				042D46CB20C905AB005056AE /* LANConversation.m */,
+				042D46DE20CA6E08005056AE /* UDPSocket.h */,
+				042D46DF20CA6E08005056AE /* UDPSocket.m */,
+				044DDF0A20CE1E82004B79C0 /* ToolHandle.h */,
+				044DDF0B20CE1E82004B79C0 /* ToolHandle.m */,
+				0429B9F2207C5F3B00E75ADE /* Main.storyboard */,
+				0429B9F5207C5F3B00E75ADE /* Assets.xcassets */,
+				0429B9F7207C5F3B00E75ADE /* LaunchScreen.storyboard */,
+				0429B9FA207C5F3B00E75ADE /* Info.plist */,
+				0429B9FB207C5F3B00E75ADE /* main.m */,
+			);
+			path = WiFiSocket;
+			sourceTree = "<group>";
+		};
+		0429BA04207C5F3B00E75ADE /* WiFiSocketTests */ = {
+			isa = PBXGroup;
+			children = (
+				0429BA05207C5F3B00E75ADE /* WiFiSocketTests.m */,
+				0429BA07207C5F3B00E75ADE /* Info.plist */,
+				04CE57EF20D2797D005A3417 /* PrefixHeader.pch */,
+			);
+			path = WiFiSocketTests;
+			sourceTree = "<group>";
+		};
+		0429BA0F207C5F3B00E75ADE /* WiFiSocketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0429BA10207C5F3B00E75ADE /* WiFiSocketUITests.m */,
+				0429BA12207C5F3B00E75ADE /* Info.plist */,
+			);
+			path = WiFiSocketUITests;
+			sourceTree = "<group>";
+		};
+		0429BA1E207C5F6400E75ADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E2B792219536820064E0B9 /* CoreTelephony.framework */,
+				0442E71020F2FE9900DC373F /* CoreMotion.framework */,
+				0442E70E20F2FD4D00DC373F /* AudioToolbox.framework */,
+				0429BA1F207C5F6400E75ADE /* WebKit.framework */,
+				294E45D06492FC7EEFF2AD77 /* libPods-WiFiSocket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		042D46B720C7B4E2005056AE /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				04FCF6DD21EC25BE00074BDE /* LocationInformation.h */,
+				04FCF6DC21EC25BD00074BDE /* LocationInformation.m */,
+				0462A07D21AFE3A5001548FB /* SpecialConstant.h */,
+				0462A07E21AFE3A5001548FB /* SpecialConstant.m */,
+				042F82FB213E906000EFE233 /* Category */,
+				042F82F7213E8F9E00EFE233 /* ScanCodeView.h */,
+				042F82F5213E8F9E00EFE233 /* ScanCodeView.m */,
+				042F82F6213E8F9E00EFE233 /* ScanCodeViewController.h */,
+				042F82F8213E8F9E00EFE233 /* ScanCodeViewController.m */,
+				0437CBF22126B5CA001DF934 /* startai_mq_ios_3_0_1.framework */,
+				0427B89920F87F6300832693 /* SmartConfig */,
+				044DDF0820CE1A7F004B79C0 /* service.crt */,
+				042D46C120C7B891005056AE /* BasicInfoCollection.h */,
+				042D46C020C7B891005056AE /* BasicInfoCollection.m */,
+				042D46B820C7B4E2005056AE /* AirKiss */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		042D46B820C7B4E2005056AE /* AirKiss */ = {
+			isa = PBXGroup;
+			children = (
+				042D46E620CA7CFB005056AE /* GCDAsyncUdpSocket.h */,
+				042D46EA20CA7CFB005056AE /* GCDAsyncUdpSocket.m */,
+				042D46EB20CA7CFB005056AE /* JMAirKiss_Defines.h */,
+				042D46E520CA7CFB005056AE /* JMAirKiss.h */,
+				042D46E720CA7CFB005056AE /* JMAirKissConnection.h */,
+				042D46E920CA7CFB005056AE /* JMAirKissConnection.m */,
+				042D46E420CA7CFB005056AE /* JMAirKissEncoder.h */,
+				042D46E820CA7CFB005056AE /* JMAirKissEncoder.m */,
+				042D46B920C7B4E2005056AE /* GCDAsyncSocket.h */,
+				042D46BA20C7B4E2005056AE /* GCDAsyncSocket.m */,
+			);
+			path = AirKiss;
+			sourceTree = "<group>";
+		};
+		042DBCB020FDFAE80053C3CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				042DBCB320FDFAE80053C3CF /* BaseModel.h */,
+				042DBCB420FDFAE80053C3CF /* BaseModel.m */,
+				042DBCB120FDFAE80053C3CF /* BaseControlModel.h */,
+				042DBCB220FDFAE80053C3CF /* BaseControlModel.m */,
+				04FF9EAB22A6240D002A6767 /* BaseControlModel+ConstantTemperature.h */,
+				04FF9EAC22A6240D002A6767 /* BaseControlModel+ConstantTemperature.m */,
+				04FCF6DF21EC27E400074BDE /* WeatherRequestModel.h */,
+				04FCF6E021EC27E400074BDE /* WeatherRequestModel.m */,
+				04BD491521884A3B00C4E526 /* LightControlModel.h */,
+				04BD491621884A3B00C4E526 /* LightControlModel.m */,
+				043A622A21758D1B00B9E373 /* LoginModel.h */,
+				043A622B21758D1B00B9E373 /* LoginModel.m */,
+				042DBCB720FDFAE80053C3CF /* SettingModel.h */,
+				042DBCB820FDFAE80053C3CF /* SettingModel.m */,
+				042DBCB920FDFAE80053C3CF /* HomeModel.h */,
+				042DBCBA20FDFAE80053C3CF /* HomeModel.m */,
+				0468535520FEEFAE00816BD7 /* ConfigWiFiModel.h */,
+				0468535620FEEFAE00816BD7 /* ConfigWiFiModel.m */,
+				04D1F4F921A269B600E4A080 /* MallModel.h */,
+				04D1F4FA21A269B600E4A080 /* MallModel.m */,
+				042EB0602135352300BEB67C /* UserInfoModel.h */,
+				042EB0612135352300BEB67C /* UserInfoModel.m */,
+				04412F192180859000EBF497 /* FirmwareUpdateModel.h */,
+				04412F1A2180859000EBF497 /* FirmwareUpdateModel.m */,
+				04E4522A21B6694E002DDE32 /* QueryHistoryModel.h */,
+				04E4522B21B6694E002DDE32 /* QueryHistoryModel.m */,
+				0480C772214F5B510071D9CE /* MqMessageResponseModel.h */,
+				0480C773214F5B510071D9CE /* MqMessageResponseModel.m */,
+				042DBCB520FDFAE80053C3CF /* HandlingDataModel.h */,
+				042DBCB620FDFAE80053C3CF /* HandlingDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		042F82FB213E906000EFE233 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				042F82FC213E906000EFE233 /* UIColor+HexColor.h */,
+				042F82FD213E906000EFE233 /* UIColor+HexColor.m */,
+				042F82FE213E906000EFE233 /* UIFont+Adjust.h */,
+				042F82FF213E906000EFE233 /* UIFont+Adjust.m */,
+				042F8300213E906000EFE233 /* UIImage */,
+				042F8303213E906000EFE233 /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		042F8300213E906000EFE233 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				042F8301213E906000EFE233 /* UIImage+ColorSelect.h */,
+				042F8302213E906000EFE233 /* UIImage+ColorSelect.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		042F8303213E906000EFE233 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				042F8304213E906000EFE233 /* UIView+ColorSelect.h */,
+				042F8305213E906000EFE233 /* UIView+ColorSelect.m */,
+				042F8306213E906000EFE233 /* UIView+frame.h */,
+				042F8307213E906000EFE233 /* UIView+frame.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		044DB2AB224B624500233634 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				044DB2AE224B62F200233634 /* UserDefault.h */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		044DB2AF224B6BA900233634 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				044DB2B0224B6BEA00233634 /* StoreLocal.h */,
+				044DB2B1224B6BEA00233634 /* StoreLocal.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		C60D187706C6019C4B17F4F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08041DB73838947CC77D9816 /* Pods-WiFiSocket.debug.xcconfig */,
+				3EBF4B6C91A8D40D7290401B /* Pods-WiFiSocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0429B9E8207C5F3B00E75ADE /* WiFiSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0429BA15207C5F3B00E75ADE /* Build configuration list for PBXNativeTarget "WiFiSocket" */;
+			buildPhases = (
+				3A2969F4DE9DA0C227028B6D /* [CP] Check Pods Manifest.lock */,
+				0429B9E5207C5F3B00E75ADE /* Sources */,
+				0429B9E6207C5F3B00E75ADE /* Frameworks */,
+				0429B9E7207C5F3B00E75ADE /* Resources */,
+				D203B733C34E7297923461A7 /* [CP] Copy Pods Resources */,
+				042E0C9D20EF012A000DBE59 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiFiSocket;
+			productName = WiFiSocket;
+			productReference = 0429B9E9207C5F3B00E75ADE /* WiFiSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0429BA00207C5F3B00E75ADE /* WiFiSocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0429BA18207C5F3B00E75ADE /* Build configuration list for PBXNativeTarget "WiFiSocketTests" */;
+			buildPhases = (
+				0429B9FD207C5F3B00E75ADE /* Sources */,
+				0429B9FE207C5F3B00E75ADE /* Frameworks */,
+				0429B9FF207C5F3B00E75ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0429BA03207C5F3B00E75ADE /* PBXTargetDependency */,
+			);
+			name = WiFiSocketTests;
+			productName = WiFiSocketTests;
+			productReference = 0429BA01207C5F3B00E75ADE /* WiFiSocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0429BA0B207C5F3B00E75ADE /* WiFiSocketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0429BA1B207C5F3B00E75ADE /* Build configuration list for PBXNativeTarget "WiFiSocketUITests" */;
+			buildPhases = (
+				0429BA08207C5F3B00E75ADE /* Sources */,
+				0429BA09207C5F3B00E75ADE /* Frameworks */,
+				0429BA0A207C5F3B00E75ADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0429BA0E207C5F3B00E75ADE /* PBXTargetDependency */,
+			);
+			name = WiFiSocketUITests;
+			productName = WiFiSocketUITests;
+			productReference = 0429BA0C207C5F3B00E75ADE /* WiFiSocketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0429B9E1207C5F3B00E75ADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = QiXing;
+				TargetAttributes = {
+					0429B9E8207C5F3B00E75ADE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					0429BA00207C5F3B00E75ADE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0429B9E8207C5F3B00E75ADE;
+					};
+					0429BA0B207C5F3B00E75ADE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0429B9E8207C5F3B00E75ADE;
+					};
+				};
+			};
+			buildConfigurationList = 0429B9E4207C5F3B00E75ADE /* Build configuration list for PBXProject "WiFiSocket" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0429B9E0207C5F3B00E75ADE;
+			productRefGroup = 0429B9EA207C5F3B00E75ADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0429B9E8207C5F3B00E75ADE /* WiFiSocket */,
+				0429BA00207C5F3B00E75ADE /* WiFiSocketTests */,
+				0429BA0B207C5F3B00E75ADE /* WiFiSocketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0429B9E7207C5F3B00E75ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0429B9F9207C5F3B00E75ADE /* LaunchScreen.storyboard in Resources */,
+				0404A47A2297D0750051067C /* NBDist in Resources */,
+				0429B9F6207C5F3B00E75ADE /* Assets.xcassets in Resources */,
+				0429B9F4207C5F3B00E75ADE /* Main.storyboard in Resources */,
+				044EE73F2318ACB4006D92AD /* MiNiWif_H5 in Resources */,
+				0427B8C220F87F6300832693 /* EspTouchDemo-Info.plist in Resources */,
+				04E7BE1E20EB6D3300C988E8 /* TestViewController.xib in Resources */,
+				04C72927221E953400044F82 /* MusikDist in Resources */,
+				044DDF0920CE1A7F004B79C0 /* service.crt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0429B9FF207C5F3B00E75ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0429BA0A207C5F3B00E75ADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A2969F4DE9DA0C227028B6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiFiSocket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D203B733C34E7297923461A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WiFiSocket/Pods-WiFiSocket-resources.sh",
+				"${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMOAuth2ViewTouch.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WiFiSocket/Pods-WiFiSocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0429B9E5207C5F3B00E75ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0462A07F21AFE3A5001548FB /* SpecialConstant.m in Sources */,
+				0427B8C820F87F6300832693 /* ESPUDPSocketServer.m in Sources */,
+				0427B8C720F87F6300832693 /* ESPUDPSocketClient.m in Sources */,
+				04E4522C21B6694E002DDE32 /* QueryHistoryModel.m in Sources */,
+				042F8308213E906000EFE233 /* UIColor+HexColor.m in Sources */,
+				04D1F4FB21A269B600E4A080 /* MallModel.m in Sources */,
+				042EB0622135352300BEB67C /* UserInfoModel.m in Sources */,
+				042D46C220C7B891005056AE /* BasicInfoCollection.m in Sources */,
+				0429B9F1207C5F3B00E75ADE /* MainViewController.m in Sources */,
+				0427B8C020F87F6300832693 /* ESPDatumCode.m in Sources */,
+				0427B8BE20F87F6300832693 /* ESPAES.m in Sources */,
+				0468535720FEEFAE00816BD7 /* ConfigWiFiModel.m in Sources */,
+				0427B8C320F87F6300832693 /* ESPTouchGenerator.m in Sources */,
+				04BD491721884A3B00C4E526 /* LightControlModel.m in Sources */,
+				04FCF6DE21EC25BE00074BDE /* LocationInformation.m in Sources */,
+				042D46E020CA6E08005056AE /* UDPSocket.m in Sources */,
+				042D46C620C7D76F005056AE /* MqttClientManager.m in Sources */,
+				04E7BE1D20EB6D3300C988E8 /* TestViewController.m in Sources */,
+				04FF9EAD22A6240D002A6767 /* BaseControlModel+ConstantTemperature.m in Sources */,
+				04FCF6E121EC27E400074BDE /* WeatherRequestModel.m in Sources */,
+				042D46CC20C905AB005056AE /* LANConversation.m in Sources */,
+				042F830B213E906000EFE233 /* UIView+ColorSelect.m in Sources */,
+				0427B8C120F87F6300832693 /* ESPGuideCode.m in Sources */,
+				0427B8C520F87F6300832693 /* ESPTouchTask.m in Sources */,
+				042DBCBE20FDFAE90053C3CF /* SettingModel.m in Sources */,
+				042DBCBF20FDFAE90053C3CF /* HomeModel.m in Sources */,
+				042D46BD20C7B4E2005056AE /* GCDAsyncSocket.m in Sources */,
+				042F82FA213E8F9F00EFE233 /* ScanCodeViewController.m in Sources */,
+				042F830A213E906000EFE233 /* UIImage+ColorSelect.m in Sources */,
+				0429B9FC207C5F3B00E75ADE /* main.m in Sources */,
+				042D46C920C8DA18005056AE /* MQTTMessageEntity.m in Sources */,
+				0427B8BF20F87F6300832693 /* ESPDataCode.m in Sources */,
+				0427B8C420F87F6300832693 /* ESPTouchResult.m in Sources */,
+				0427B8BB20F87F6300832693 /* ESP_CRC8.m in Sources */,
+				042D46ED20CA7CFB005056AE /* JMAirKissConnection.m in Sources */,
+				0427B8BD20F87F6300832693 /* ESP_WifiUtil.m in Sources */,
+				043A622C21758D1B00B9E373 /* LoginModel.m in Sources */,
+				042DBCBC20FDFAE90053C3CF /* BaseModel.m in Sources */,
+				042F82F9213E8F9F00EFE233 /* ScanCodeView.m in Sources */,
+				042F8309213E906000EFE233 /* UIFont+Adjust.m in Sources */,
+				044DB2B2224B6BEA00233634 /* StoreLocal.m in Sources */,
+				04412F1B2180859000EBF497 /* FirmwareUpdateModel.m in Sources */,
+				0427B8C620F87F6300832693 /* ESPTouchTaskParameter.m in Sources */,
+				0427B8BC20F87F6300832693 /* ESP_NetUtil.m in Sources */,
+				044DDF0C20CE1E82004B79C0 /* ToolHandle.m in Sources */,
+				042D46EC20CA7CFB005056AE /* JMAirKissEncoder.m in Sources */,
+				041D3D3421F9636D0028EF0C /* MallViewController.m in Sources */,
+				042D46EE20CA7CFB005056AE /* GCDAsyncUdpSocket.m in Sources */,
+				0427B8BA20F87F6300832693 /* ESP_ByteUtil.m in Sources */,
+				0480C774214F5B510071D9CE /* MqMessageResponseModel.m in Sources */,
+				0429B9EE207C5F3B00E75ADE /* WiFiSocketAppDelegate.m in Sources */,
+				042DBCBB20FDFAE90053C3CF /* BaseControlModel.m in Sources */,
+				042DBCBD20FDFAE90053C3CF /* HandlingDataModel.m in Sources */,
+				0427B8CB20F87FA500832693 /* SmartConfigWifi.m in Sources */,
+				042F830C213E906000EFE233 /* UIView+frame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0429B9FD207C5F3B00E75ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0427B8CC20F8807E00832693 /* SmartConfigWifi.m in Sources */,
+				0429BA06207C5F3B00E75ADE /* WiFiSocketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0429BA08207C5F3B00E75ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042E706A211D4181008B6F04 /* UDPSocket.m in Sources */,
+				0429BA11207C5F3B00E75ADE /* WiFiSocketUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0429BA03207C5F3B00E75ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0429B9E8207C5F3B00E75ADE /* WiFiSocket */;
+			targetProxy = 0429BA02207C5F3B00E75ADE /* PBXContainerItemProxy */;
+		};
+		0429BA0E207C5F3B00E75ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0429B9E8207C5F3B00E75ADE /* WiFiSocket */;
+			targetProxy = 0429BA0D207C5F3B00E75ADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0429B9F2207C5F3B00E75ADE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0429B9F3207C5F3B00E75ADE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0429B9F7207C5F3B00E75ADE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0429B9F8207C5F3B00E75ADE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0429BA13207C5F3B00E75ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+					WITH_TLS,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armvs";
+			};
+			name = Debug;
+		};
+		0429BA14207C5F3B00E75ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = WITH_TLS;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armvs";
+			};
+			name = Release;
+		};
+		0429BA16207C5F3B00E75ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08041DB73838947CC77D9816 /* Pods-WiFiSocket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = TriggerHome;
+				CODE_SIGN_ENTITLEMENTS = WiFiSocket/WiFiSocket.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H3MW6H3SRL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/AirKiss",
+					"$(PROJECT_DIR)/WiFiSocket/SDK",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/Required",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/PlatformConnector",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/Required",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WiFiSocketTests/PrefixHeader.pch;
+				INFOPLIST_FILE = WiFiSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMOAuth2\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac\"",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Bolts\"",
+					"-l\"FBSDKCoreKit\"",
+					"-l\"FBSDKLoginKit\"",
+					"-l\"GTMOAuth2\"",
+					"-l\"GTMSessionFetcher\"",
+					"-l\"GoogleToolboxForMac\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Twitter-OAuth\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GoogleSignIn\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WifiSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = WiFiSocketDev;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		0429BA17207C5F3B00E75ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBF4B6C91A8D40D7290401B /* Pods-WiFiSocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = TriggerHome;
+				CODE_SIGN_ENTITLEMENTS = WiFiSocket/WiFiSocket.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = H3MW6H3SRL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/AirKiss",
+					"$(PROJECT_DIR)/WiFiSocket/SDK",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/Required",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/PlatformConnector",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/Required",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WiFiSocketTests/PrefixHeader.pch;
+				INFOPLIST_FILE = WiFiSocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/WiFiSocket/SDK/share/SDK/ShareSDK/Support/PlatformSDK/WeChatSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Bolts\"",
+					"-l\"FBSDKCoreKit\"",
+					"-l\"FBSDKLoginKit\"",
+					"-l\"GTMOAuth2\"",
+					"-l\"GTMSessionFetcher\"",
+					"-l\"GoogleToolboxForMac\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Twitter-OAuth\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GoogleSignIn\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WifiSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = WiFiSocketDev;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		0429BA19207C5F3B00E75ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiFiSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QiXing..WiFiSocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiSocket.app/WiFiSocket";
+			};
+			name = Debug;
+		};
+		0429BA1A207C5F3B00E75ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiFiSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QiXing..WiFiSocketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiSocket.app/WiFiSocket";
+			};
+			name = Release;
+		};
+		0429BA1C207C5F3B00E75ADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiFiSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QiXing..WiFiSocketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiFiSocket;
+			};
+			name = Debug;
+		};
+		0429BA1D207C5F3B00E75ADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiFiSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = QiXing..WiFiSocketUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiFiSocket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0429B9E4207C5F3B00E75ADE /* Build configuration list for PBXProject "WiFiSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0429BA13207C5F3B00E75ADE /* Debug */,
+				0429BA14207C5F3B00E75ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0429BA15207C5F3B00E75ADE /* Build configuration list for PBXNativeTarget "WiFiSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0429BA16207C5F3B00E75ADE /* Debug */,
+				0429BA17207C5F3B00E75ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0429BA18207C5F3B00E75ADE /* Build configuration list for PBXNativeTarget "WiFiSocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0429BA19207C5F3B00E75ADE /* Debug */,
+				0429BA1A207C5F3B00E75ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0429BA1B207C5F3B00E75ADE /* Build configuration list for PBXNativeTarget "WiFiSocketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0429BA1C207C5F3B00E75ADE /* Debug */,
+				0429BA1D207C5F3B00E75ADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0429B9E1207C5F3B00E75ADE /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module startai_mq_ios_3_0_1 {
+  umbrella header "startai_mq_ios_3_0_1.h"
+
+  export *
+  module * { export * }
+}
