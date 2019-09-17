@@ -61,6 +61,8 @@
              @"BackupRecoveryDataRequest",//备份中恢复数据
              @"indicatorLightStateRequest", //查询指示灯开关状态
              @"indicatorLightSwitchRequest",    //控制指示灯开关状态
+             @"deviceLabelRequest",     //查询设备标签请求
+             @"setDeviceLabelRequest",     //设置设备标签
              ];
 }
 
@@ -91,6 +93,8 @@
              @"BackupRecoveryDataRequest":@"BackupRecoveryDataRequest:",//备份中恢复数据
              @"indicatorLightStateRequest":@"indicatorLightStateRequest:", //查询指示灯开关状态
              @"indicatorLightSwitchRequest":@"indicatorLightSwitchRequest:",    //控制指示灯开关状态
+             @"deviceLabelRequest":@"deviceLabelRequest:",
+             @"setDeviceLabelRequest":@"setDeviceLabelRequest:",
              };
 }
 
@@ -618,6 +622,66 @@
     }];
 }
 
+#pragma mark 查询设备标签
+- (void)deviceLabelRequest:(NSDictionary *)object{
+    
+    NSString *mac = [object objectForKey:@"mac"];
+    
+    int8_t type = 0x01;
+    int8_t cmd = 0x43;
+    
+    NSMutableData *data = [NSMutableData data];
+    [data appendData:[self getData:type]];
+    [data appendData:[self getData:cmd]];
+    
+    [self sendData:data mac:mac];
+    
+}
+
+///查询设备标签 0x44
+- (void)queryDeviceLabelResponse:(NSDictionary *)dict deviceMac:(NSString *)dviceMac{
+    
+    
+    NSString *jsonCode = [NSString stringWithFormat:@"deviceLabelResponse('%@',)",dviceMac];
+    [self.web evaluateJavaScript:jsonCode completionHandler:^(id _Nullable web, NSError * _Nullable error) {
+        
+    }];
+    
+}
+
+#pragma mark 设置设备标签
+- (void)setDeviceLabelRequest:(NSDictionary *)object{
+    
+    NSString *mac = [object objectForKey:@"mac"];
+    
+    int8_t type = 0x02;
+    int8_t cmd = 0x41;
+    
+    NSData *name = [object[@"label"] dataUsingEncoding:NSUTF8StringEncoding];
+    name = [self replaceNoUtf8:name];
+    NSString *nameStr = [NSString stringWithUTF8String:[name bytes]];
+    if ([nameStr hasPrefix:@"*"]) {
+        nameStr = [nameStr substringWithRange:NSMakeRange(1, nameStr.length-1)];
+    }
+    
+    NSMutableData *data = [NSMutableData data];
+    [data appendData:[self getData:type]];
+    [data appendData:[self getData:cmd]];
+    [data appendData:name];
+    
+    [self sendData:data mac:mac];
+    
+}
+
+///设置设备标签 0x42
+- (void)settingDeviceLabelResponse:(NSDictionary *)dict deviceMac:(NSString *)dviceMac{
+    
+    NSString *jsonCode = [NSString stringWithFormat:@"setDeviceLabelResponse('%@',)",dviceMac];
+    [self.web evaluateJavaScript:jsonCode completionHandler:^(id _Nullable web, NSError * _Nullable error) {
+        
+    }];
+    
+}
 
 #pragma mark 消息组包发送
 - (void)sendData:(NSMutableData *)data mac:(NSString *)mac
@@ -648,5 +712,72 @@
     }
 }
 
+- (NSData *)replaceNoUtf8:(NSData *)data
+{
+    char aa[] = {'*','*','*','*','*','*'};                      //utf8最多6个字符，当前方法未使用
+    NSMutableData *md = [NSMutableData dataWithData:data];
+    int loc = 0;
+    while(loc < [md length])
+    {
+        char buffer;
+        [md getBytes:&buffer range:NSMakeRange(loc, 1)];
+        if((buffer & 0x80) == 0)
+        {
+            loc++;
+            continue;
+        }
+        else if((buffer & 0xE0) == 0xC0)
+        {
+            loc++;
+            if (loc>=data.length) {
+                continue;
+            }
+            [md getBytes:&buffer range:NSMakeRange(loc, 1)];
+            if((buffer & 0xC0) == 0x80)
+            {
+                loc++;
+                continue;
+            }
+            loc--;
+            //非法字符，将这个字符（一个byte）替换为A
+            [md replaceBytesInRange:NSMakeRange(loc, 1) withBytes:aa length:1];
+            loc++;
+            continue;
+        }
+        else if((buffer & 0xF0) == 0xE0)
+        {
+            loc++;
+            if (loc>=data.length) {
+                continue;
+            }
+            [md getBytes:&buffer range:NSMakeRange(loc, 1)];
+            if((buffer & 0xC0) == 0x80)
+            {
+                loc++;
+                [md getBytes:&buffer range:NSMakeRange(loc, 1)];
+                if((buffer & 0xC0) == 0x80)
+                {
+                    loc++;
+                    continue;
+                }
+                loc--;
+            }
+            loc--;
+            //非法字符，将这个字符（一个byte）替换为A
+            [md replaceBytesInRange:NSMakeRange(loc, 1) withBytes:aa length:1];
+            loc++;
+            continue;
+        }
+        else
+        {
+            //非法字符，将这个字符（一个byte）替换为A
+            [md replaceBytesInRange:NSMakeRange(loc, 1) withBytes:aa length:1];
+            loc++;
+            continue;
+        }
+    }
+    
+    return md;
+}
 
 @end

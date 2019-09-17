@@ -71,6 +71,7 @@
 		0480C774214F5B510071D9CE /* MqMessageResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480C773214F5B510071D9CE /* MqMessageResponseModel.m */; };
 		048BB0852126B68400AD5C21 /* startai_mq_ios_3_0_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0437CBF22126B5CA001DF934 /* startai_mq_ios_3_0_1.framework */; };
 		048BB0862126B68400AD5C21 /* startai_mq_ios_3_0_1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0437CBF22126B5CA001DF934 /* startai_mq_ios_3_0_1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04B722C52329DF24001F3B62 /* DeviceStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B722C42329DF24001F3B62 /* DeviceStatusModel.m */; };
 		04BD491721884A3B00C4E526 /* LightControlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD491621884A3B00C4E526 /* LightControlModel.m */; };
 		04C72927221E953400044F82 /* MusikDist in Resources */ = {isa = PBXBuildFile; fileRef = 04C72926221E953400044F82 /* MusikDist */; };
 		04D1F4FB21A269B600E4A080 /* MallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D1F4FA21A269B600E4A080 /* MallModel.m */; };
@@ -237,6 +238,8 @@
 		0468535620FEEFAE00816BD7 /* ConfigWiFiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigWiFiModel.m; sourceTree = "<group>"; };
 		0480C772214F5B510071D9CE /* MqMessageResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MqMessageResponseModel.h; sourceTree = "<group>"; };
 		0480C773214F5B510071D9CE /* MqMessageResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MqMessageResponseModel.m; sourceTree = "<group>"; };
+		04B722C32329DF24001F3B62 /* DeviceStatusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceStatusModel.h; sourceTree = "<group>"; };
+		04B722C42329DF24001F3B62 /* DeviceStatusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceStatusModel.m; sourceTree = "<group>"; };
 		04BD491521884A3B00C4E526 /* LightControlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightControlModel.h; sourceTree = "<group>"; };
 		04BD491621884A3B00C4E526 /* LightControlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightControlModel.m; sourceTree = "<group>"; };
 		04C72926221E953400044F82 /* MusikDist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MusikDist; sourceTree = SOURCE_ROOT; };
@@ -472,6 +475,8 @@
 				042DBCB220FDFAE80053C3CF /* BaseControlModel.m */,
 				04FF9EAB22A6240D002A6767 /* BaseControlModel+ConstantTemperature.h */,
 				04FF9EAC22A6240D002A6767 /* BaseControlModel+ConstantTemperature.m */,
+				04B722C32329DF24001F3B62 /* DeviceStatusModel.h */,
+				04B722C42329DF24001F3B62 /* DeviceStatusModel.m */,
 				04FCF6DF21EC27E400074BDE /* WeatherRequestModel.h */,
 				04FCF6E021EC27E400074BDE /* WeatherRequestModel.m */,
 				04BD491521884A3B00C4E526 /* LightControlModel.h */,
@@ -629,7 +634,7 @@
 				TargetAttributes = {
 					0429B9E8207C5F3B00E75ADE = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.AccessWiFi = {
 								enabled = 1;
@@ -757,6 +762,7 @@
 				0462A07F21AFE3A5001548FB /* SpecialConstant.m in Sources */,
 				0427B8C820F87F6300832693 /* ESPUDPSocketServer.m in Sources */,
 				0427B8C720F87F6300832693 /* ESPUDPSocketClient.m in Sources */,
+				04B722C52329DF24001F3B62 /* DeviceStatusModel.m in Sources */,
 				04E4522C21B6694E002DDE32 /* QueryHistoryModel.m in Sources */,
 				042F8308213E906000EFE233 /* UIColor+HexColor.m in Sources */,
 				04D1F4FB21A269B600E4A080 /* MallModel.m in Sources */,
@@ -982,9 +988,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = TriggerHome;
 				CODE_SIGN_ENTITLEMENTS = WiFiSocket/WiFiSocket.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3MW6H3SRL;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1062,7 +1068,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WifiSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = WiFiSocketDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -1074,9 +1080,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = TriggerHome;
 				CODE_SIGN_ENTITLEMENTS = WiFiSocket/WiFiSocket.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3MW6H3SRL;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1149,7 +1155,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WifiSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = WiFiSocketDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};

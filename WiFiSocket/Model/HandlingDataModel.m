@@ -20,6 +20,7 @@
 #import "MqMessageResponseModel.h"  //广域网消息处理
 #import "LightControlModel.h"       //灯光管理
 #import "QueryHistoryModel.h"       //查询设备历史记录
+#import "DeviceStatusModel.h"     //查询插座（工作状态）
 
 @interface HandlingDataModel ()
 {
@@ -101,6 +102,8 @@
              [NSString stringWithFormat:@"%d-%d",0x02,0x48]:[BaseControlModel shareInstance],    //温度-恒温模式删除返回
                      
              [NSString stringWithFormat:@"%d-%d",0x01,0x0c]:[SettingModel shareInstance],    //重命名设备名称
+             [NSString stringWithFormat:@"%d-%d",0x01,0x42]:[SettingModel shareInstance],    //设置设备标签返回
+             [NSString stringWithFormat:@"%d-%d",0x01,0x44]:[SettingModel shareInstance],    //查询设备标签返回
              [NSString stringWithFormat:@"%d-%d",0x02,0x0e]:[SettingModel shareInstance],    //查询设备名称
              [NSString stringWithFormat:@"%d-%d",0x02,0x3C]:[SettingModel shareInstance],    //控制指示灯返回
              [NSString stringWithFormat:@"%d-%d",0x02,0x3E]:[SettingModel shareInstance],    //查询指示灯返回
@@ -127,7 +130,8 @@
              [NSString stringWithFormat:@"%d-%d",0x02,0x34]:[LightControlModel shareInstance],        //查询所有彩灯模式返回
              [NSString stringWithFormat:@"%d-%d",0x02,0x36]:[LightControlModel shareInstance],        //小夜灯定时设置返回
              [NSString stringWithFormat:@"%d-%d",0x02,0x38]:[LightControlModel shareInstance],        //小夜灯查询返回
-                     
+             
+             
              [NSString stringWithFormat:@"%d-%d",0x02,0x1a]:[QueryHistoryModel shareInstance],       //查询一天历史数据回复
              [NSString stringWithFormat:@"%d-%d",0x02,0x42]:[QueryHistoryModel shareInstance],       //查询一天历史数据回复
              [NSString stringWithFormat:@"%d-%d",0x02,0x1A]:[QueryHistoryModel shareInstance],    //按时间查询已用电量电费返回
@@ -145,6 +149,9 @@
              [NSString stringWithFormat:@"%d-%d",0x01,0x04]:[MqMessageResponseModel shareInstance],    //发现设备回复
              [NSString stringWithFormat:@"%d-%d",0x01,0x0e]:[MqMessageResponseModel shareInstance],    //查询设备名称回复
              [NSString stringWithFormat:@"%d-%d",0x01,0x3E]:[MqMessageResponseModel shareInstance],    //查询WiFiSSID
+             
+             [NSString stringWithFormat:@"%d-%d",0x02,0x4A]:[DeviceStatusModel shareInstance],      //查询插座工作时长返回
+             [NSString stringWithFormat:@"%d-%d",0x02,0x4C]:[DeviceStatusModel shareInstance],      //查询插座网络工作时长返回
              
              };
 }
@@ -529,6 +536,30 @@
                                       };
                 self.updateWifiInfomation(dic);
             }
+        }else if (cmd == 0x42){
+            if ([self.delegate respondsToSelector:@selector(settingDeviceLabelResponse:deviceMac:)]) {
+                [self.delegate settingDeviceLabelResponse:@{@"result":@([self getByteWithoffset:useDataLoc-1]),
+//                                                                         @"worknettime":@(worknettime)
+                                                                    } deviceMac:deviceMac];
+            }
+        }else if (cmd == 0x44){
+            
+            if (property.length>useDataLoc+256) {
+                NSData *name = [data subdataWithRange:NSMakeRange(useDataLoc, 256)];
+                name = [self replaceNoUtf8:name];
+                NSString *nameStr = [NSString stringWithUTF8String:[name bytes]];
+                if ([nameStr hasPrefix:@"*"]) {
+                    nameStr = [nameStr substringWithRange:NSMakeRange(1, nameStr.length-1)];
+                }
+                if ([self.delegate respondsToSelector:@selector(queryDeviceLabelResponse:deviceMac:)]) {
+                    [self.delegate queryDeviceLabelResponse:@{@"result":@([self getByteWithoffset:useDataLoc-1]),
+                                                              @"label":nameStr
+                                                              } deviceMac:deviceMac];
+                }
+                
+            }
+            
+            
         }
 
     }else if (type == 0x02) {
@@ -856,8 +887,23 @@
                 
             }
             
+        }else if (cmd == 0x4A){
+            long long worktime = [[NSString stringWithFormat:@"%d",([self getByteWithoffset:useDataLoc]<<24)+([self getByteWithoffset:useDataLoc+1]<<16)+([self getByteWithoffset:useDataLoc+2]<<8)+[self getByteWithoffset:useDataLoc+3]] longLongValue];
+            if ([self.delegate respondsToSelector:@selector(queryWorkingHoursSocketsResponse:deviceMac:)]) {
+                [self.delegate queryWorkingHoursSocketsResponse:@{@"result":@([self getByteWithoffset:useDataLoc-1]),
+                                                                          @"worktime":@(worktime)
+                                                                          } deviceMac:deviceMac];
+            }
+            
+        }else if (cmd == 0x4C){
+            long long worknettime = [[NSString stringWithFormat:@"%d",([self getByteWithoffset:useDataLoc]<<24)+([self getByteWithoffset:useDataLoc+1]<<16)+([self getByteWithoffset:useDataLoc+2]<<8)+[self getByteWithoffset:useDataLoc+3]] longLongValue];
+            if ([self.delegate respondsToSelector:@selector(queryWorkingNetWorkHoursSocketsResponse:deviceMac:)]) {
+                [self.delegate queryWorkingNetWorkHoursSocketsResponse:@{@"result":@([self getByteWithoffset:useDataLoc-1]),
+                                                                  @"worknettime":@(worknettime)
+                                                                  } deviceMac:deviceMac];
+            }
+            
         }
-        
         
     }else if (type == 3) {
         uint8_t startLoc = useDataLoc-1;

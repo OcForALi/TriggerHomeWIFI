@@ -104,7 +104,7 @@
                                                       green:54/255.0
                                                        blue:61/255.0
                                                       alpha:1];
-
+    
     [self.view addSubview:self.statusView];
     WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
     //     根据需要去设置对应的属性

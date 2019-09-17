@@ -146,6 +146,18 @@
 ///温度-恒温模式删除 返回 0x48
 - (void)timingConstTemperatureDataDeleteResponse:(NSDictionary *)dict deviceMac:(NSString *)deviceMac;
 
+///设置设备标签 0x42
+- (void)settingDeviceLabelResponse:(NSDictionary *)dict deviceMac:(NSString *)dviceMac;
+
+///查询设备标签 0x44
+- (void)queryDeviceLabelResponse:(NSDictionary *)dict deviceMac:(NSString *)dviceMac;
+
+///查询插座工作时长 返回 0x4A
+- (void)queryWorkingHoursSocketsResponse:(NSDictionary *)dict deviceMac:(NSString *)deviceMac;
+
+///查询插座网络工作时长 返回 0x4C
+- (void)queryWorkingNetWorkHoursSocketsResponse:(NSDictionary *)dict deviceMac:(NSString *)deviceMac;
+
 /******************************************设置界面操作******************************************/
 /**
  *  设置电压警告值回复
