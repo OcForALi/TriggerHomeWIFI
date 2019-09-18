@@ -27,6 +27,7 @@
 #import "LightControlModel.h"       //灯光管理
 #import "QueryHistoryModel.h"       //查询设备历史记录
 #import "WeatherRequestModel.h"     //查询天气状况
+#import "DeviceStatusModel.h"       //查询插座工作时长
 
 #import "MallViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
@@ -61,6 +62,8 @@
 @property (nonatomic, strong) QueryHistoryModel *historyModel;
 @property (nonatomic, strong) WeatherRequestModel *weatherModel;
 @property (nonatomic, strong) MqMessageResponseModel *messageResponseModel;
+@property (nonatomic, strong) DeviceStatusModel *deviceStatusModel;
+
 @property (nonatomic, strong) HandlingDataModel *handlingModel;
 
 @property (nonatomic, strong) TwitterOAuthViewController *twitterVC;
@@ -172,8 +175,12 @@
     self.weatherModel.methodArr = self.funcArr;
     [self.weatherModel registFunctionWithWeb:self.webView];
     
+    self.deviceStatusModel.methodArr = self.funcArr;
+    [self.deviceStatusModel registFunctionWithWeb:self.webView];
+    
     [self.messageResponseModel registFunctionWithWeb:self.webView];
     [self.handlingModel regegistDelegate:self];
+    
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(fbUserInfo:)
@@ -712,8 +719,6 @@
         }];
         
     }
-    
-    
 
 }
 
